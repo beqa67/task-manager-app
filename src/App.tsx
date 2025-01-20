@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <h2>{count}</h2>
-      <button onClick={() => dispatch(increment())}>increment</button>
+      <button onClick={() => dispatch(increment())}>increment </button>
       <button onClick={() => dispatch(decrement())}>decrement</button>
       <button onClick={() => dispatch(incrementByAmount(10))}>increment by amount</button>
       <button onClick={() => dispatch(incrementAsync(10))}>increment by incrementAsync</button>
