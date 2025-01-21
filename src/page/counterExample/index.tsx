@@ -8,7 +8,7 @@ function CounterExample() {
   const dispatch = useDispatch<AppDispatch>()
 
   return (
-     <div className="App">
+     <div>
        <h2>{count}</h2>
        <button onClick={() => dispatch(increment())}>increment</button>
        <button onClick={() => dispatch(decrement())}>decrement</button>

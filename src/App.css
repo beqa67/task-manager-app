@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.row {
+  display: flex;
+  margin: 0 -15px 0 -15px;
+  flex: fit-content;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
