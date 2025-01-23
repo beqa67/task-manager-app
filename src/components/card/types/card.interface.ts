@@ -4,4 +4,5 @@ export interface CardProps {
   description: string,
   isCompleted: boolean,
   dueDate: string,
+  status: string
 }
