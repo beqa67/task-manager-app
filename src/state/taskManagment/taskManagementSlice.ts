@@ -1,5 +1,5 @@
 import {tasks} from "../../fakeData/tasks";
-import {createSlice} from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 interface TaskManagementState {
   tasks: {
@@ -18,7 +18,22 @@ const initialState: TaskManagementState = {
 const taskManagementSlice = createSlice({
   name: 'taskManagement',
   initialState,
-  reducers: {}
+  reducers: {
+    changeTaskStatus: (state, action: PayloadAction<number>) => {
+      const mappedTasks = state.tasks.map((item) => {
+        if (item.id === action.payload.id) {
+          return {
+            ...item,
+            status: action.payload.value
+          }
+        }
+        return item
+      })
+      console.log('mappedTasks', mappedTasks)
+      state.tasks = mappedTasks
+    }
+  }
 })
 
+export const { changeTaskStatus } = taskManagementSlice.actions
 export default taskManagementSlice.reducer
