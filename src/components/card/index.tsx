@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 import {useDispatch} from "react-redux";
 import {AppDispatch} from "../../state/store";
 import {changeTaskStatus} from "../../state/taskManagment/taskManagementSlice";
+import {statuses} from "../../constants/constants";
 
 const Card: FC<CardProps> = ({data}) => {
   const {title, description, id, isCompleted, dueDate, status} = data
@@ -19,11 +20,12 @@ const Card: FC<CardProps> = ({data}) => {
        <div>{description}</div>
        <div>{dueDate}</div>
        <div>{status}</div>
-       <select onChange={handleOnChane}>
-         <option value="completed">completed</option>
-         <option value="inProgress">In Progress</option>
-         <option value="todo">To Do</option>
-         <option value="done">Done</option>
+       <select value={status} onChange={handleOnChane}>
+         <option value={statuses.IN_REVIEW}>In Review</option>
+         <option value={statuses.IN_PROGRESS}>In Progress</option>
+         <option value={statuses.TO_DO}>To Do</option>
+         <option value={statuses.DONE}>Done</option>
+         <option value={statuses.IN_TEST}>Test</option>
        </select>
      </div>
   )
