@@ -1,0 +1,8 @@
+.column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%; /* 100% / 5 = 20% */
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
