@@ -29,7 +29,6 @@ const taskManagementSlice = createSlice({
         }
         return item
       })
-      console.log('mappedTasks', mappedTasks)
       state.tasks = mappedTasks
     }
   }

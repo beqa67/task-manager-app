@@ -1,3 +1,5 @@
+import {statuses} from "../../constants/constants";
+
 export const tasks =  [
   {
     id: 11,
@@ -5,7 +7,7 @@ export const tasks =  [
     description: "Milk, Bread, Cheese, and Vegetables",
     isCompleted: false,
     dueDate: "2025-01-21",
-    status: 'To Do'
+    status: statuses.IN_REVIEW
   },
   {
     id: 21,
@@ -13,7 +15,7 @@ export const tasks =  [
     description: "Complete the task manager app and test all features",
     isCompleted: false,
     dueDate: "2025-01-25",
-    status: 'To Do'
+    status: statuses.IN_TEST
   },
   {
     id: 31,
@@ -21,7 +23,7 @@ export const tasks =  [
     description: "Inquire about the new credit card offers",
     isCompleted: true,
     dueDate: "2025-01-18",
-    status: 'To Do'
+    status: statuses.IN_REVIEW
   },
   {
     id: 41,
@@ -29,7 +31,7 @@ export const tasks =  [
     description: "30-minute cardio session",
     isCompleted: false,
     dueDate: "2025-01-19",
-    status: 'To Do'
+    status: statuses.TO_DO
   },
   {
     id: 51,
@@ -37,7 +39,7 @@ export const tasks =  [
     description: "Continue reading 'Atomic Habits' - Chapter 5",
     isCompleted: true,
     dueDate: "2025-01-20",
-    status: 'To Do'
+    status: statuses.TO_DO
   },
   {
     id: 1,
@@ -45,7 +47,7 @@ export const tasks =  [
     description: "Buy vegetables, fruits, and milk from the store",
     isCompleted: false,
     dueDate: "2025-01-22",
-    status: 'To Do'
+    status: statuses.IN_PROGRESS
   },
   {
     id: 2,
@@ -53,7 +55,7 @@ export const tasks =  [
     description: "Complete a 30-minute cardio session at the gym",
     isCompleted: true,
     dueDate: "2025-01-20",
-    status: 'To Do'
+    status: statuses.DONE
   },
   {
     id: 3,
@@ -61,7 +63,7 @@ export const tasks =  [
     description: "Discuss project updates with the team at 3 PM",
     isCompleted: false,
     dueDate: "2025-01-21",
-    status: 'To Do'
+    status: statuses.IN_PROGRESS
   },
   {
     id: 4,
@@ -69,7 +71,7 @@ export const tasks =  [
     description: "Study useEffect and useReducer for advanced state management",
     isCompleted: false,
     dueDate: "2025-01-23",
-    status: 'To Do'
+    status: statuses.DONE
   },
   {
     id: 5,
@@ -77,7 +79,7 @@ export const tasks =  [
     description: "Continue reading 'Atomic Habits' - Chapter 5",
     isCompleted: true,
     dueDate: "2025-01-20",
-    status: 'To Do'
+    status: statuses.TO_DO
   },
   {
     id: 6,
@@ -85,7 +87,7 @@ export const tasks =  [
     description: "Send all necessary tax forms to the accountant",
     isCompleted: false,
     dueDate: "2025-01-25",
-    status: 'To Do'
+    status: statuses.TO_DO
   },
   {
     id: 7,
@@ -93,7 +95,7 @@ export const tasks =  [
     description: "Prepare a healthy dinner with grilled chicken and vegetables",
     isCompleted: true,
     dueDate: "2025-01-19",
-    status: 'To Do'
+    status: statuses.TO_DO
   },
   {
     id: 8,
@@ -101,7 +103,7 @@ export const tasks =  [
     description: "Draft an article about JavaScript best practices",
     isCompleted: false,
     dueDate: "2025-01-27",
-    status: 'To Do'
+    status: statuses.TO_DO
   },
   {
     id: 9,
@@ -109,7 +111,7 @@ export const tasks =  [
     description: "Research and plan an itinerary for the spring break trip",
     isCompleted: false,
     dueDate: "2025-02-10",
-    status: 'To Do'
+    status: statuses.IN_PROGRESS
   },
   {
     id: 10,
@@ -117,6 +119,6 @@ export const tasks =  [
     description: "Resolve high-priority bugs reported in the task tracker",
     isCompleted: true,
     dueDate: "2025-01-18",
-    status: 'To Do'
+    status: statuses.IN_REVIEW
   },
 ];
