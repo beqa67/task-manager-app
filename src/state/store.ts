@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from './counter/counterSlice'
 import taskManagementReducer from "./taskManagment/taskManagementSlice";
+import modalReducer from './modal/modalSlice'
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    taskManagement: taskManagementReducer
+    taskManagement: taskManagementReducer,
+    modal: modalReducer
   }
 })
 
